@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="cloud_blog">
+    <serverData>
+      <paths name="cloud_blog">
+        <serverdata>
+          <mappings>
+            <mapping deploy="" local="F:/RainMe/PHP/code/cloud_blog" web="/" />
+            <mapping local="" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

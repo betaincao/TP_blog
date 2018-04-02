@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+    <title>Rain_Blog</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="/Public/home/css/style.css" rel="stylesheet" type="text/css"/>
+    <!-- CuFon: Enables smooth pretty custom font rendering. 100% SEO friendly. To disable, remove this section -->
+    <script type="text/javascript" src="/Public/home/js/cufon-yui.js"></script>
+    <script type="text/javascript" src="/Public/home/js/cuf_run.js"></script>
+    <link href="/Public/home/css/index.css" rel="stylesheet">
+    <!-- CuFon ends -->
+</head>
+<body>
+<div class="main">
+    <include file="Index/header"/>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="content">
+        <div class="content_resize">
+            <div class="mainbar">
+                <div class="article">
+
+                    <volist name="article_list" id="list">
+                        <div class="blogs">
+                            <h3><a href="/index.php?c=article&a=show&a_id={$list.a_id}">{$list.a_title}</a></h3>
+                            <figure><img src="{$list.a_photo}" width="100" height="100"></figure>
+                            {$list.a_begin}
+                            <a href="/index.php?c=article&a=show&a_id=list.a_id"
+                               class="readmore">阅读全文&gt;&gt;</a>
+                            <p class="autor"><span>作者：{$list.a_adduser}</span><span>分类：【<a href="/">{$list.a_type}</a>】
+                                </span><span>浏览（{$list.a_visit}） </span><span>评论（{$list.a_comment}） </span>
+                                <span>发布时间：{$list.a_addtime}</span></p>
+                            <div class="dateview" align="center">{$list.a_addtime}</div>
+                        </div>
+                    </volist>
+
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="searchform">
+                    <form id="formsearch" name="formsearch" method="post" action=""><span><input
+                            name="editbox_search" class="editbox_search" id="editbox_search"
+                            maxlength="80" value="Search our ste:" type="text"/></span> <input
+                            name="button_search" src="/Public/home/images/search_btn.gif" class="button_search"
+                            type="image"/></form>
+                </div>
+                <div class="gadget">
+                    <h2 class="star"><span>Blog_</span> Menu</h2>
+                    <div class="clr"></div>
+                    <ul class="sb_menu">
+                        <include file="Index/right_menu"/>
+                    </ul>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+    <include file="Index/footer"/>
+</div>
+</body>
+</html>

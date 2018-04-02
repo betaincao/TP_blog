@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+    <title>Rain_Blog</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="/Public/home/css/style.css" rel="stylesheet" type="text/css"/>
+    <!-- CuFon: Enables smooth pretty custom font rendering. 100% SEO friendly. To disable, remove this section -->
+    <script type="text/javascript" src="/Public/home/js/cufon-yui.js"></script>
+    <script type="text/javascript" src="/Public/home/js/cuf_run.js"></script>
+    <link href="/Public/home/css/style2.css" rel="stylesheet">
+    <link href="/Public/home/css/media.css" rel="stylesheet">
+    <!-- CuFon ends -->
+</head>
+<body>
+<div class="main" >
+    <include file="header"/>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <div class="content_resize">
+            <div class="mainbar">
+                <div class="ibody">
+                    <article align="center">
+                        <div class="index_about">
+                            <h2 class="c_titile">{$article.a_title}</h2>
+                            <p class="box_c"><span class="d_time">发布时间：{$article.a_adddate}</span><span>编辑：{$article.a_adduser}</span>
+                                <span>浏览（{$article.a_visit}）</span><span>评论（{$article.a_comment}）</span>
+                            <p class="box_c"><span>关键字词</span>：{$article.a_type}</p>
+                            </p>
+
+                            <ul class="infos">
+                                <include file="markdown"/>
+                            </ul>
+                        </div>
+                    </article>
+                        </div>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+    <include file="Index/footer"/>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="372569da-cde4-4143-bb80-66d464f34d2a" name="cloud_blog" url="http://59.111.97.173">
+        <fileTransfer host="59.111.97.173" port="22" privateKey="F:\download\rain" rootFolder="/var/www" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" muteSftpMessages="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
